@@ -1,0 +1,117 @@
+:root {
+    --accent: #A18A68;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-gray: #707070;
+    --gray: #D8D8D8;
+    --light-gray: #EFEFEF;
+    --errors: #D82700;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1248px;
+    margin: 0 auto;
+}
+body {
+    color: var(--black);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+html {
+    min-height: 100%;
+}
+.header {
+
+}
+.footer {
+
+}
+.content {
+
+}
+.wrapper {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+.gray-link {
+    color: var(--dark-gray);
+}
+.gray-link_current, .gray-link:hover, .gray-link:active {
+    color: var(--black);
+}
+.black-link {
+    color: var(--black);
+}
+.black-link_current, .black-link:hover, .black-link:active {
+    color: var(--dark-gray);
+}
+.accent-link {
+    color: var(--accent);
+}
+.accent-link_current, .accent-link:hover, .accent-link:active {
+    color: var(--black);
+}
+.dm-sans-desktop-heading-1 {
+    font-weight: 500;
+    font-size: 33px;
+}
+.dm-sans-desktop-heading-2 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+}
+.dm-sans-desktop-heading-3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+.dm-sans-desktop-heading-4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+.dm-sans-desktop-heading-5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+.dm-sans-desktop-body-large {
+    font-weight: 700;
+    font-size: 16px;
+}
+.dm-sans-desktop-body-medium {
+    font-weight: 400;
+    font-size: 14px;
+}
+.dm-sans-desktop-body-small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+.dm-sans-mobile-heading-1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+.dm-sans-mobile-heading-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+.dm-sans-mobile-heading-3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+.dm-sans-mobile-body-small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}

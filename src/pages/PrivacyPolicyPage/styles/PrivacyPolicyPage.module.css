@@ -1,0 +1,71 @@
+.container-page {
+    margin: 96px auto;
+    width: 671px;
+
+    color: var(--black);
+}
+.page-title {
+    text-align: center;
+    margin-bottom: 39px;
+    line-height: 43px;
+}
+.policy-updated-date {
+    color: var(--accent)
+}
+.section {
+    margin-bottom: 39px;
+}
+.section__sub-section {
+    margin-bottom: 10px;
+}
+.section__small-section {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.section__title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+.section__sub-title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.section__list {
+
+}
+.list {
+    list-style-position: inside;
+    padding-left: 14px;
+}
+.section__body-text {
+
+}
+.list__item .section__body-text {
+    display: inline;
+}
+.list__item .section__body-text_block {
+    display: block;
+}
+.list__item::marker {
+    content: '\25CF  ';
+    font-weight: 400;
+    font-size: 12px;
+}
+.list_outside {
+    list-style: outside;
+    padding-left: 25px;
+}
+.section__body-strong {
+    font-weight: 700;
+}
+.section__body-link {
+    white-space: pre;
+}
+.section__small-title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+}

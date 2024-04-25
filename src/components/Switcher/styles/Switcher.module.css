@@ -1,0 +1,37 @@
+.switcher {
+    --switcher-padding: 5px;
+    --option-amount: 1;
+    --slider-step: 100%;
+    --current-option: 2;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: var(--switcher-padding);
+    z-index: 1;
+}
+.switcher__option {
+    border: none;
+    outline: none;
+    width: calc(100% / var(--option-amount));
+    /*flex: 1;*/
+    white-space: nowrap;
+    padding: 12px 0;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+}
+.switcher__slider {
+    height: calc(100% - (var(--switcher-padding) * 2));
+    width: calc((100% - (var(--switcher-padding) * 2)) / var(--option-amount));
+    position: absolute;
+    border-radius: 8px;
+    background-color: var(--white);
+    z-index: 2;
+    transition: all 1s cubic-bezier(0.37, 0.03, 0.58, 1);
+}
+.switcher__option-selected {
+    background-color: var(--white);
+}

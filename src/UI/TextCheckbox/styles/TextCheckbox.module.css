@@ -1,0 +1,13 @@
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+.checkbox-wrapper__input {
+    border: 1px solid var(--dark-gray);
+    border-radius: 2px;
+    margin-right: 8px;
+    accent-color: var(--dark-gray);
+}
+.checkbox-wrapper__label {
+
+}

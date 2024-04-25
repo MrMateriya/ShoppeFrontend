@@ -1,0 +1,36 @@
+.form__title {
+    text-align: center;
+    margin-bottom: 64px;
+    line-height: 43px;
+}
+.form__text-input {
+    margin-bottom: 46px;
+}
+.form__text-input-font {
+    font-family: var(--dm-sans);
+}
+.form__text-input_last {
+    margin-bottom: 15px;
+}
+.form__switcher {
+    margin-bottom: 126px;
+}
+.form__switcher-button {
+
+}
+.form__checkbox-input {
+    margin-bottom: 69px;
+}
+.form__submit-button {
+    padding: 16px;
+    width: 100%;
+    white-space: nowrap;
+    font-family: var(--dm-sans);
+    border-radius: 4px;
+    line-height: 21px;
+    margin-bottom: 13px;
+}
+.form__recover-password {
+    display: block;
+    text-align: center;
+}
