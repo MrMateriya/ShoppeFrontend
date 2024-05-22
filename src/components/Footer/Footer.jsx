@@ -4,12 +4,12 @@ import LinkList from "@/components/LinkList/LinkList";
 import {fontDMSans} from "@/app/layout";
 const Footer = ({className}) => {
   const pageLinks = [
-    {url: '/contact%20us', title: 'Contact'},
-    {url: '/terms%20of%20services', title: 'Terms of services'},
-    {url: '/shipping%20and%20returns', title: 'Shipping and returns'}
+    {url: '/contact-us', title: 'Contact'},
+    {url: '/terms-of-services', title: 'Terms of services'},
+    {url: '/shipping-and-returns', title: 'Shipping and returns'}
   ]
   const copyrightLinks = [
-    {url: '/terms%20of%20use', title: 'Terms of use'},
+    {url: '/terms-of-use', title: 'Terms of use'},
     {url: '/privacy-policy', title: 'privacy policy'}
   ]
   return (

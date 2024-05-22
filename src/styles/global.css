@@ -42,22 +42,40 @@ a {
     color: var(--black);
 }
 .gray-link {
+    cursor: pointer;
     color: var(--dark-gray);
 }
-.gray-link_current, .gray-link:hover, .gray-link:active {
+.gray-link_current, .gray-link:active {
     color: var(--black);
+}
+@media (hover: hover) {
+    .gray-link:hover {
+        color: var(--black);
+    }
 }
 .black-link {
+    cursor: pointer;
     color: var(--black);
 }
-.black-link_current, .black-link:hover, .black-link:active {
+.black-link_current, .black-link:active {
     color: var(--dark-gray);
 }
+@media (hover: hover) {
+    .black-link:hover {
+        color: var(--black);
+    }
+}
 .accent-link {
+    cursor: pointer;
     color: var(--accent);
 }
-.accent-link_current, .accent-link:hover, .accent-link:active {
+.accent-link_current, .accent-link:active {
     color: var(--black);
+}
+@media (hover: hover) {
+    .accent-link:hover {
+        color: var(--black);
+    }
 }
 .dm-sans-desktop-heading-1 {
     font-weight: 500;

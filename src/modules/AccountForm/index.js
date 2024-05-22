@@ -1,0 +1,1 @@
+export {default as AccountForm} from "@/modules/AccountForm/components/AccountForm/AccountForm";

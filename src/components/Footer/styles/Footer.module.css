@@ -96,8 +96,13 @@
     height: 100%;
     color: #000000;
 }
-.social-media-list__item:hover .social-media-list__image-path, .social-media-list__item:active .social-media-list__image-path {
+.social-media-list__item:active .social-media-list__image-path {
     fill: var(--black);
+}
+@media (hover: hover) {
+    .social-media-list__item:hover .social-media-list__image-path {
+        fill: var(--black);
+    }
 }
 .social-media-list__image-path {
     fill: var(--dark-gray);

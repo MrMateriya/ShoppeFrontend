@@ -1,3 +1,59 @@
-.container-page {
+.page-container {
+    margin: 0 auto;
+    padding: 96px 0;
+    width: 672px;
+}
+.page-section_titled {
+    margin-bottom: 39px;
+}
+.page-title {
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.page-sub-title {
+    text-align: center;
+    margin-bottom: 46px;
+}
+.page-section {
+    margin-bottom: 39px;
+}
+.page-section__title {
+    margin-bottom: 23px;
+}
+.page-section__image-wrapper {
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 48px;
+}
+.page-section__image {
+    width: 100%;
+}
+.page-section__description {
+
+}
+.page-section__image-emily {
+    position: relative;
+    top: 100px;
+}
+.page-section__image-early-development {
+
+}
+.page-section__image-expansion-and-optimization {
+    position: relative;
+    top: -55px;
+}
+.page-section__image-current-status {
+    position: relative;
+    top: 150px;
+}
+.page-section__image-new-design-and-features {
+    position: relative;
+    top: 165px;
+}
+.page-section__image-covid {
 
 }

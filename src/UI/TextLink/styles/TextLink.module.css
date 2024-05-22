@@ -22,14 +22,24 @@
 .link_gray-current, .link_gray:hover, .link_gray:active {
     color: var(--black);
 }
+@media (hover: hover) {
+    .link_gray:hover {
+        color: var(--black);
+    }
+}
 .link_black {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: var(--black);
 }
-.link_black-current, .link_black:hover, .link_black:active  {
+.link_black-current, .link_black:active  {
     color: var(--dark-gray);
+}
+@media (hover: hover) {
+    .link_black:hover {
+        color: var(--dark-gray);
+    }
 }
 .link_accent {
     font-weight: 700;

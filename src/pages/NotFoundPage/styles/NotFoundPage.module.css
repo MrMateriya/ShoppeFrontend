@@ -27,7 +27,13 @@
     text-transform: uppercase;
     line-height: 21px;
 }
-.error__link:hover, .error__link:active {
+.error__link:active {
     color: var(--white);
     background-color: var(--black);
+}
+@media (hover: hover) {
+    .error__link:hover {
+        color: var(--white);
+        background-color: var(--black);
+    }
 }

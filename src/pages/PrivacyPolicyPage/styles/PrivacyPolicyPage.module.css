@@ -1,8 +1,11 @@
 .container-page {
-    margin: 96px auto;
+    margin: 0 auto;
     width: 671px;
 
     color: var(--black);
+}
+.privacy-policy-content {
+    padding: 96px 0;
 }
 .page-title {
     text-align: center;

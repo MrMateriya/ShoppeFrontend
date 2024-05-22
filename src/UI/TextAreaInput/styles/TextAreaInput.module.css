@@ -1,0 +1,8 @@
+.textarea {
+    all: unset;
+    border: none;
+    outline: none;
+    resize: none;
+
+    border-bottom: 1px solid var(--gray);
+}

@@ -1,0 +1,36 @@
+.addresses-content {
+    margin-top: 36px;
+}
+.addresses-content__description {
+    margin-bottom: 45px;
+}
+.addresses-content__addresses-list {
+
+}
+.addresses-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 381px;
+}
+.addresses-list__item {
+    display: flex;
+    flex-direction: column;
+}
+.addresses-list__title {
+    margin-bottom: 24px;
+}
+.addresses-list__add-button {
+    border: none;
+    background: none;
+    outline: none;
+    width: fit-content;
+
+    margin-bottom: 14px;
+    line-height: 21px;
+    font-family: var(--dm-sans);
+}
+.addresses-list__description {
+    line-height: 22px;
+    color: var(--dark-gray);
+}

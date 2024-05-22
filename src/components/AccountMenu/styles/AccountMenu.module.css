@@ -1,0 +1,26 @@
+.page-title {
+    padding-bottom: 64px;
+    text-align: center;
+}
+.account-sections {
+    display: flex;
+
+    gap: 49px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid var(--gray);
+}
+.account-sections__link {
+    color: var(--dark-gray);
+    position: relative;
+}
+.account-sections__link_underlined-current {
+    color: var(--black);
+}
+.account-sections__link_underlined-current:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    background-color: var(--black);
+    top: calc(100% + 34px);
+    height: 1px;
+}

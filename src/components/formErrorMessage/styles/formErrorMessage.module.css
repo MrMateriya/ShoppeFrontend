@@ -1,0 +1,45 @@
+.form-error-message__title {
+    color: var(--errors);
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+.form-error-message {
+    border: 1px dashed var(--errors);
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0;
+}
+
+.form-error-message-appear {
+    opacity: 0;
+}
+.form-error-message-active-appear {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.37, 0.03, 0.58, 1);
+}
+.form-error-message-done-appear {
+    opacity: 1;
+}
+.form-error-message-enter {
+    opacity: 0;
+}
+.form-error-message-active-enter {
+    opacity: 1;
+    transition: opacity 0.6s;
+    transition-timing-function: cubic-bezier(0.46, 0.01, 0.25, 1.02);
+}
+.form-error-message-done-enter {
+    opacity: 1;
+}
+.form-error-message-exit {
+    opacity: 1;
+}
+.form-error-message-active-exit {
+    opacity: 0;
+    transition: opacity 0.6s;
+    transition-timing-function: cubic-bezier(0.46, 0.01, 0.25, 1.02);
+}
+.form-error-message-done-exit {
+    opacity: 0;
+}

@@ -5,7 +5,7 @@ import React, {memo} from 'react';
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 
-const TextLink = memo(function TextLink ({href, className, classNameCurrentLink, styleType = 'underlined', children, ...props}) {
+const TextLink = memo(function TextLink ({ href, className, classNameCurrentLink, styleType = 'underlined', children, ...props}) {
   let styleLinkType;
   let styleLinkTypeActive;
   switch (styleType) {

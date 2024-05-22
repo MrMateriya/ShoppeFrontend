@@ -1,0 +1,86 @@
+.form {
+    position: relative;
+}
+.form__title {
+    text-align: center;
+    margin-bottom: 64px;
+    line-height: 43px;
+}
+.form__request-error-title {
+}
+.form__request-error {
+    margin-bottom: 40px;
+}
+
+.form__text-input {
+    margin-bottom: 46px;
+}
+.form__text-input-font {
+    font-family: var(--dm-sans);
+}
+.form__text-input_last {
+    margin-bottom: 15px;
+}
+.form__switcher {
+    margin-bottom: 38px;
+}
+.form__switcher-button {
+    font-family: var(--dm-sans);
+}
+.form__checkbox-input {
+    margin-bottom: 69px;
+}
+.form__submit-button {
+    padding: 16px;
+    width: 100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: var(--dm-sans);
+    border-radius: 4px;
+    line-height: 21px;
+    margin-bottom: 13px;
+}
+.form__submit-button:disabled {
+    opacity: 0.1;
+}
+.form__recover-password {
+    display: block;
+    text-align: center;
+}
+
+.option-page-left-enter {
+    opacity: 0;
+}
+.option-page-left-active-enter {
+    opacity: 1;
+    transition: all 2s linear;
+}
+.option-page-left-done-enter {
+    opacity: 1;
+}
+
+.option-page-left-appear {
+    opacity: 0;
+    position: relative;
+}
+.option-page-left-active-appear {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.37, 0.03, 0.58, 1);
+}
+.option-page-left-done-appear {
+    opacity: 1;
+    position: relative;
+}
+
+.option-page-right-appear {
+    opacity: 0;
+    position: relative;
+}
+.option-page-right-active-appear {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.37, 0.03, 0.58, 1);
+}
+.option-page-right-done-appear {
+    opacity: 1;
+    position: relative;
+}

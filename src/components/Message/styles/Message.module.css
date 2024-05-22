@@ -1,0 +1,25 @@
+.message {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-gray);
+    padding: 22px 24px 24px 40px;
+    border-top: 2px solid var(--accent);
+}
+.message_no-icon {
+    padding: 22px 40px 24px 40px;
+}
+.message__description-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message__link {
+    line-height: 21px;
+}
+.message__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}

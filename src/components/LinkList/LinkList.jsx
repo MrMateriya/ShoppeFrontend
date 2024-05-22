@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import TextLink from "@/UI/TextLink/TextLink";
 import ImageLink from "@/UI/ImageLink/ImageLink";
 
 const LinkList = ({links, icons, classNameLink, classNameCurrentLink, classNameLinkImage, children}) => {
   return (
     icons
-    ? <>
+    ? <Fragment>
         {links.map((link, index) => {
           return (
             <ImageLink
@@ -19,7 +19,7 @@ const LinkList = ({links, icons, classNameLink, classNameCurrentLink, classNameL
             />
           );
         })}
-      </>
+      </Fragment>
     : <>
         {links.map(link => {
           return (

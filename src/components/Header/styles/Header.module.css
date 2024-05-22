@@ -12,8 +12,13 @@
     font-weight: 400;
     color: var(--black);
 }
-.logo:hover, .logo:active {
+.logo:active {
     color: #e1c69b;
+}
+@media (hover: hover) {
+    .logo:hover {
+        color: #e1c69b;
+    }
 }
 .logo_current {
 

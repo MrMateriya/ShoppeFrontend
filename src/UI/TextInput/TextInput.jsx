@@ -1,21 +1,40 @@
 'use client'
 
-import React, {useCallback, useState, memo} from 'react';
+import React, {useState, memo, useRef} from 'react';
 import styles from './styles/TextInput.module.css'
+import { Transition} from "react-transition-group";
 
-const TextInput = memo(function Input({className, classNameInput, classNameErrorMessage, classNameFontInput, validationErrorMessage, ...props}) {
+const TextInput = memo(function Input({className, classNameInput, classNameErrorMessage, classNameFontInput, validationErrorMessage, onChange, pattern, ...props}) {
   const [value, setValue] = useState('')
   const [isShowError, setIsShowError] = useState(false)
 
-  const handleChange = useCallback((e) => {
+  const errorRef = useRef()
+
+  function checkValidation() {
+    if (!pattern) return;
+
+    const inputPattern = new RegExp(pattern)
+
+    if (!inputPattern.test(value)) {
+      setIsShowError(true)
+    }
+    else {
+      setIsShowError(false)
+    }
+  }
+  function handleChange(e) {
     setValue(e.target.value)
-    }, [])
-  const handleClick = useCallback((e) => {
+    if (onChange) {
+      onChange(e)
+    }
+  }
+  function handleCrossClick (e) {
     setValue('')
-  }, [])
-  const handleBlur = useCallback((e) => {
-    setIsShowError(true)
-  }, [])
+  }
+  function handleBlur () {
+    checkValidation()
+  }
+  const [focused, setFocused] = useState(false);
   return (
     <div className={[styles['input-wrapper'], className].join(' ')}>
       <input type='text'
@@ -23,10 +42,10 @@ const TextInput = memo(function Input({className, classNameInput, classNameError
              value={value}
              onChange={handleChange}
              className={[styles['input-wrapper__input'], classNameFontInput || styles['input-wrapper__input-font'], classNameInput].join(' ')}
-             data-error-is-show={isShowError}
+             pattern={pattern}
              {...props}/>
       {value
-        ? <button onClick={handleClick} className={styles['input-wrapper__cross-button']}>
+        ? <button onClick={handleCrossClick} className={styles['input-wrapper__cross-button']}>
           <svg className={styles['input-wrapper__cross-svg']} width="12" height="12" viewBox="0 0 12 12" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path className={styles['input-wrapper__cross-path']} fillRule="evenodd" clipRule="evenodd"
@@ -36,9 +55,20 @@ const TextInput = memo(function Input({className, classNameInput, classNameError
         </button>
         : false
       }
-      {
-        validationErrorMessage && <p className={[styles['input-wrapper__error-message'], classNameErrorMessage || styles['input-wrapper__error-message-font']].join(' ')}>{validationErrorMessage}</p>
-      }
+      <Transition mountOnEnter
+                  unmountOnExit
+                  in={isShowError}
+                  timeout={600}
+                  nodeRef={errorRef}
+                  appear={true}>
+        {
+          state => (
+          <p ref={errorRef}
+             className={[styles['input-wrapper__error-message'], classNameErrorMessage || styles['input-wrapper__error-message-font'], styles[`error-message-${state}`]].join(' ')}>
+            {validationErrorMessage || 'Invalid input'}
+          </p>)
+        }
+      </Transition>
     </div>
   );
 });

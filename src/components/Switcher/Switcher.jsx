@@ -8,7 +8,6 @@ const Switcher = memo(function Switcher({className, classNameButtons, onChange, 
   const handleOptionClick = (option) => {
     setSelectedOptionId(option.id)
     if (onChange && (selectedOptionId !== option.id)) {
-      console.log('change')
       onChange(option)
     }
   }
@@ -16,17 +15,17 @@ const Switcher = memo(function Switcher({className, classNameButtons, onChange, 
     <div style={{'--option-amount': options.length}} className={[styles['switcher'], className].join(' ')} {...props}>
       <div style={{transform: `translateX(calc(var(--slider-step) * ${selectedOptionId}))`}} className={styles['switcher__slider']}></div>
       {options.map(option => {
-        return (
-          <button key={option.id}
-                  onClick={() => {handleOptionClick(option)}}
-                  type='button'
-                  className={[styles['switcher__option'], classNameButtons].join(' ')}>
-            {option.title}
-          </button>
-        );
-      })}
+          return (
+            <button key={option.id}
+                    onClick={() => {handleOptionClick(option)}}
+                    type='button'
+                    className={[styles['switcher__option'], classNameButtons].join(' ')}>
+              {option.title}
+            </button>
+          );
+        })
+      }
     </div>
   );
 });
-
 export default Switcher;

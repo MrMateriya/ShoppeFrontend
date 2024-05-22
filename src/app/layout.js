@@ -2,7 +2,7 @@ import '../styles/global.css'
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import localFont from "next/font/local";
-import {Allerta_Stencil} from "next/font/google";
+import { Allerta_Stencil } from "next/font/google";
 
 export const fontDMSans = localFont({
   src: '../../public/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf',
@@ -22,11 +22,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={[fontDMSans.className, fontAllertaStencil.variable, fontDMSans.variable].join(' ')}>
+
         <Header classname='header'/>
+
         <div className='content'>
           {children}
         </div>
+
         <Footer className='footer'/>
+
       </body>
     </html>
   );

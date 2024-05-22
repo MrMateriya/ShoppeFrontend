@@ -609,17 +609,16 @@ const PrivacyPolicyPage = () => {
           <ul className={[styles['section__list'], styles['list']].join(' ')}>
             <li className={styles['list__item']}>
               <p className={[styles['section__body-text'], 'dm-sans-desktop-heading-5'].join(' ')}>
-                By email: <a href='mailto:shoppe@gmail.com'
+                By email: <a href={`mailto:${process.env.NEXT_PUBLIC_SHOPPE_EMAIL}`}
                              className={[styles['section__body-link'], 'gray-link'].join(' ')}
-                             target="_blank">shoppe@gmail.com</a>
+                             target="_blank">{process.env.NEXT_PUBLIC_SHOPPE_EMAIL}</a>
               </p>
             </li>
             <li className={styles['list__item']}>
               <p className={[styles['section__body-text'], 'dm-sans-desktop-heading-5'].join(' ')}>By visiting this page on our website:
                 <a className={[styles['section__body-link'], 'gray-link'].join(' ')}
-                   href="http://www.shoppe.com/contact-us"
-                   rel="external nofollow noopener"
-                   target="_blank"> http://www.shoppe.com/contact-us</a>
+                   href={`${process.env.NEXT_PUBLIC_FRONTEND_API_URL}/contact-us`}
+                   rel="external nofollow noopener"> {process.env.NEXT_PUBLIC_FRONTEND_API_URL}/contact-us</a>
               </p>
             </li>
           </ul>

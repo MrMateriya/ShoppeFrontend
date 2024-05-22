@@ -1,0 +1,16 @@
+.contact-us-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 94px 116px;
+}
+.contact-us-form textarea {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.contact-us-form__textarea {
+
+}
+.contact-us-form__text-input {
+
+}
