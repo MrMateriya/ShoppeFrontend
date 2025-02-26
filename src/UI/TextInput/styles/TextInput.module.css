@@ -40,7 +40,6 @@
     color: var(--black);
 }
 .input-wrapper__input:-webkit-autofill,
-.input-wrapper__input:-webkit-autofill:hover,
 .input-wrapper__input:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--black);
     -webkit-box-shadow: 0 0 0px 40rem #ffff inset;

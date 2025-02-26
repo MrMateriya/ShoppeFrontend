@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import styles from './styles/Header.module.css'
 import SearchIcon from "/public/images/icons/SearchIcon.svg"
@@ -5,24 +7,28 @@ import ShoppingCart from "/public/images/icons/ShoppingCart.svg"
 import UserIcon from "/public/images/icons/UserIcon.svg"
 import LinkList from "@/components/LinkList/LinkList";
 import TextLink from "@/UI/TextLink/TextLink";
+import {usePathname} from "next/navigation";
 const Header = () => {
+  const path = usePathname()
+
   const pageLinks = [
     {url: '/shop', title: 'Shop'},
-    {url: '/blog', title: 'Blog'},
+    // {url: '/blog', title: 'Blog'},
     {url: '/our-story', title: 'Our Story'}
   ]
   const iconLinks = [
-    {url: '/search', title: 'Search'},
+    // {url: '/search', title: 'Search'},
     {url: '/cart', title: 'Cart'},
     {url: '/my-account', title: 'Account'},
   ]
   const icons = [
-    {src: SearchIcon, alt: 'SearchIcon.svg'},
+    // {src: SearchIcon, alt: 'SearchIcon.svg'},
     {src: ShoppingCart, alt: 'ShoppingCart.svg'},
     {src: UserIcon, alt: 'UserIcon.svg'}
   ]
+
   return (
-    <header className={[styles['header'], 'container'].join(' ')}>
+    <header className={[styles['header'], path === '/'? styles['header_no-border'] : '', 'container'].join(' ')}>
       <TextLink href='/' className={[styles['header__logo'], styles['logo']].join(' ')} classNameCurrentLink={styles['logo_current']}>
         <span className={styles['logo__span']}>S</span>HOPPE
       </TextLink>

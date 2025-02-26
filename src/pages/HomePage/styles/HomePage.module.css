@@ -1,0 +1,21 @@
+.home-page {
+    padding-bottom: 96px;
+}
+.product-list-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 39px;
+}
+.product-slider-section {
+    margin-bottom: 64px;
+}
+.product-slider-section__slider {
+
+}
+.product-list-header__title {
+    line-height: 43px;
+}
+.product-list-header__link {
+    line-height: 26px;
+}

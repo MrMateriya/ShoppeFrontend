@@ -16,12 +16,12 @@
     border: none;
     outline: none;
     width: calc(100% / var(--option-amount));
-    /*flex: 1;*/
     white-space: nowrap;
     padding: 12px 0;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0);
     z-index: 3;
+    cursor: pointer;
 }
 .switcher__slider {
     height: calc(100% - (var(--switcher-padding) * 2));

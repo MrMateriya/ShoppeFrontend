@@ -5,12 +5,12 @@ import {fontDMSans} from "@/app/layout";
 const Footer = ({className}) => {
   const pageLinks = [
     {url: '/contact-us', title: 'Contact'},
-    {url: '/terms-of-services', title: 'Terms of services'},
-    {url: '/shipping-and-returns', title: 'Shipping and returns'}
+    // {url: '/terms-of-services', title: 'Terms of services'},
+    // {url: '/shipping-and-returns', title: 'Shipping and returns'}
   ]
   const copyrightLinks = [
-    {url: '/terms-of-use', title: 'Terms of use'},
-    {url: '/privacy-policy', title: 'privacy policy'}
+    // {url: '/terms-of-use', title: 'Terms of use'},
+    {url: '/privacy-policy', title: 'Privacy policy'}
   ]
   return (
     <footer className={['container', className, styles['footer']].join(' ')}>
@@ -33,11 +33,12 @@ const Footer = ({className}) => {
             links={copyrightLinks.slice(0, 1)}
             classNameLink={[styles['footer__copyright-link'], 'dm-sans-desktop-heading-5', 'gray-link'].join(' ')}
             classNameCurrentLink={'gray-link_current'}/>,
-          ' and ',
+          // ' and ',
           <LinkList
           links={copyrightLinks.slice(1, 2)}
           classNameLink={[styles['footer__copyright-link'], 'dm-sans-desktop-heading-5', 'gray-link'].join(' ')}
-          classNameCurrentLink={'gray-link_current'}/>
+          classNameCurrentLink={'gray-link_current'}/>,
+          '.'
         ]}/>
         <div className={[styles['footer__social-media-list'], styles['social-media-list']].join(' ')}>
           <a target='_blank' className={[styles['social-media-list__item'], styles['linked-in-icon']].join(' ')}

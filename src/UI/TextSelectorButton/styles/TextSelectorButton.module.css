@@ -1,0 +1,15 @@
+.selector-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+.selector-button:active {
+    background-color: rgba(0, 0, 0, 0);
+}
+.selector-button__svg {
+    width: 10px;
+    height: 6px;
+}

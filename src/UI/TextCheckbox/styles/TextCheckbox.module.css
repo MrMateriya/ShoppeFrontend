@@ -7,7 +7,8 @@
     border-radius: 2px;
     margin-right: 8px;
     accent-color: var(--dark-gray);
+    cursor: pointer;
 }
 .checkbox-wrapper__label {
-
+    cursor: pointer;
 }

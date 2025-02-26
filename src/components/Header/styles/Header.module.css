@@ -5,6 +5,9 @@
     align-items: center;
     border-bottom: 1px solid var(--gray);
 }
+.header_no-border {
+    border: none
+}
 .logo {
     font-family: var(--allerta-stencil);
     font-size: 35px;

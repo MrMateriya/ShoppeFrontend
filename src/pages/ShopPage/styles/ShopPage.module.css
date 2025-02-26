@@ -1,0 +1,31 @@
+.shop-page__title {
+    line-height: 43px;
+    margin-bottom: 39px;
+}
+.shop-page {
+    padding: 96px 0;
+}
+.shop-page__section {
+    display: grid;
+    grid-template-columns: 261px 1fr;
+    column-gap: 36px;
+}
+.side-bar__search-input {
+    margin-bottom: 39px;
+}
+.shop-page__section-product-list-item-image {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.shop-page__section-product-list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px 24px;
+}

@@ -10,7 +10,6 @@
     border-bottom: 1px solid var(--gray);
 }
 .account-sections__link {
-    color: var(--dark-gray);
     position: relative;
 }
 .account-sections__link_underlined-current {

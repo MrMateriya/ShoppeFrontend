@@ -4,6 +4,8 @@
     border-radius: 4px;
     outline: none;
     white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 .button_outlined-font {
     font-weight: 700;
@@ -15,9 +17,11 @@
     text-transform: capitalize;
     background-color: rgba(0, 0, 0, 0);
     color: var(--white);
-    border: 2px solid var(--white)
+    border: 2px solid var(--white);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
-.button_outlined:hover, .button_outlined:active {
+.button_outlined:active {
     color: var(--black);
     background-color: var(--white);
 }
@@ -37,8 +41,10 @@
     color: var(--black);
     border: 1px solid var(--black);
     background-color: var(--white);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
-.button_white:hover, .button_white:active {
+.button_white:active {
     color: var(--white);
     background-color: var(--black);
 }
@@ -58,8 +64,10 @@
     color: var(--white);
     background-color: var(--black);
     border: 1px solid var(--black);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
-.button_black:hover, .button_black:active {
+.button_black:active {
     color: var(--black);
     background-color: var(--white);
 }
